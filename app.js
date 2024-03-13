@@ -4,6 +4,7 @@
 //    fetch('https://jsonplaceholder.typicode.com/users')
 //    .then((response)=>response.json())
 //    .then((result)=> console.log(result))
+//    .catch((err)=>console.log(err))
 // };
 
 // request()
@@ -11,9 +12,14 @@
 //? async function
 
 // const request1 = async () => {
-//   const getRequest = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+//     try{
+//   const getRequest = await fetch(`https://jsonplaceholder.typicode.com/posts`)
 //   const response = await getRequest.json();
 //   console.log(response);
+//     }
+//     catch{
+//         console.log("error");
+//     }
 // };
 // request1();
 
@@ -33,12 +39,15 @@
 //   })
 // }).then(response => response.json())
 //   .then(data => console.log(data))
+//   .catch((err)=>console.log(err))
 // }
 // postRequest()
 
 //? async function
 
 // const userRequest2 = async()=>{
+  
+//     try{
 //   const postRequest = await fetch(`https://jsonplaceholder.typicode.com/users`,{
 //     method:'Post',
 //     headers:{
@@ -51,6 +60,9 @@
 //   })
 //   const response = await postRequest.json()
 //   console.log(response);
+// }catch{
+//     console.log("error");
+// }
 // }
 // userRequest2()
 
@@ -70,6 +82,7 @@
 //   })
 //   .then((response)=>response.json())
 //   .then((result)=>console.log(result))
+//   .catch((err)=>console.log(err);)
 
 
 // }
@@ -79,6 +92,7 @@
 //? async function
 
 // const userRequest2 = async() =>{
+//     try{
 //   const putRequest = await fetch(`https://jsonplaceholder.typicode.com/users/1`,{
 //     method:'Put',
 //     headers:{
@@ -91,6 +105,9 @@
 //   })
 //   const response = await putRequest.json()
 //   console.log(response);
+// }catch{
+//     console.log("error");
+// }
 // }
 
 // userRequest2()
@@ -111,6 +128,7 @@
 //   })
 //   .then((response)=>response.json())
 //   .then((result)=>console.log(result))
+//   .catch((err)=>console.log(err))
 // }
 // userRequest()
 
@@ -118,6 +136,7 @@
 
 // const userRequest2 = async() =>{
 
+//     try{
 //   const patchRequest = await fetch(`https://jsonplaceholder.typicode.com/users/1`,{
 //     method:"PATCH",
 //     headers:{
@@ -130,4 +149,7 @@
 //   })
 //   const response = await patchRequest.json()
 //   console.log(response);
+// }catch{
+//     console.log("error");
+// }
 // }
