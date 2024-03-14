@@ -92,9 +92,9 @@
 //? async function
 
 
-// const userRequest2 = async() =>{
+// const userRequest2 = async():Promise<void> =>{
 //     try{
-//   const putRequest = await fetch(`https://jsonplaceholder.typicode.com/users/1`,{
+//   const putRequest:Response = await fetch(`https://jsonplaceholder.typicode.com/users/1`,{
 //     method:'Put',
 //     headers:{
 //       'Content-type':"application/json"
@@ -104,7 +104,7 @@
 //       email:'naliyev@gmail.com'
 //     })
 //   })
-//   const response = await putRequest.json()
+//   const response:Response = await putRequest.json()
 //   console.log(response);
 // }catch{
 //     console.log("error");
