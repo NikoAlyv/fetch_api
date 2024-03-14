@@ -91,6 +91,7 @@
 
 //? async function
 
+
 // const userRequest2 = async() =>{
 //     try{
 //   const putRequest = await fetch(`https://jsonplaceholder.typicode.com/users/1`,{
